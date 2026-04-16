@@ -1,0 +1,110 @@
+/* 전체 레이아웃 */
+body { 
+    font-family: 'Pretendard', -apple-system, sans-serif; 
+    background: #f0f2f5; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    margin: 0;
+}
+
+.card { 
+    background: white; 
+    padding: 25px; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    width: 100%; 
+    max-width: 700px; 
+    text-align: center; 
+}
+
+/* 점수판 디자인 */
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    background: #343a40;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 0.95em;
+}
+.score-board span { color: #ffc107; font-weight: bold; }
+
+/* 뱃지 및 캔버스 */
+.badge { 
+    display: inline-block; 
+    padding: 5px 15px; 
+    background: #e9ecef; 
+    color: #495057; 
+    border-radius: 20px; 
+    font-size: 0.85em; 
+    margin-bottom: 15px; 
+    font-weight: 600;
+}
+
+canvas { 
+    border: 2px solid #dee2e6; 
+    border-radius: 10px; 
+    margin: 10px 0; 
+    background: #ffffff; 
+    max-width: 100%;
+}
+
+/* 퀴즈 박스 및 입력창 */
+.quiz-box { 
+    margin: 20px 0; 
+    padding: 25px; 
+    background: #f8fbff; 
+    border-radius: 12px; 
+    border: 1px solid #d0e2ff;
+}
+
+.question-text { 
+    font-size: 1.15em; 
+    font-weight: 700; 
+    margin-bottom: 15px; 
+    color: #004085; 
+}
+
+input { 
+    padding: 12px; 
+    width: 100px; 
+    border: 2px solid #ced4da; 
+    border-radius: 8px; 
+    font-size: 18px; 
+    text-align: center; 
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus { border-color: #007bff; }
+
+/* 버튼 스타일 */
+button { 
+    padding: 12px 24px; 
+    background: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-weight: 700; 
+    transition: all 0.2s;
+    margin: 5px;
+}
+
+button:hover { background: #0056b3; transform: translateY(-1px); }
+button:active { transform: translateY(0); }
+
+#feedback { 
+    margin-top: 15px; 
+    font-weight: 600; 
+    font-size: 1.05em; 
+    min-height: 25px; 
+}
+
+.success { color: #28a745; }
+.error { color: #dc3545; }
